@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psikologi Bicara - Komunikasi & Kesehatan Mental</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo" onclick="showPage('home-page')">
+            <i class="fas fa-brain logo-icon animate__animated animate__pulse animate__infinite"></i>
+            <h1 class="logo-text">Psikologi<span>Bicara</span></h1>
+        </a>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" onclick="showPage('home-page')">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" onclick="showPage('pustaka-page')">Pustaka</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" onclick="showPage('kesehatan-mental-page')">Kesehatan Mental</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" onclick="showPage('relasi-page')">Relasi & Pengembangan Diri</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" onclick="showPage('diskusi-page')">Mari Diskusi</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" onclick="showPage('konsultasi-page')">Konsultasi</a>
+            </li>
+        </ul>
+        
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="floating-element floating-1"></div>
+                <div class="floating-element floating-2"></div>
+                <div class="floating-element floating-3"></div>
+                
+                <div class="hero-text" data-aos="fade-right">
+                    <h1 class="hero-title animate__animated animate__fadeInUp">Komunikasi Efektif untuk Kesehatan Mental</h1>
+                    <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">Jelajahi dunia psikologi komunikasi untuk mengembangkan keterampilan bicara yang efektif dan membangun hubungan yang sehat dalam kehidupan sehari-hari.</p>
+                    <a href="#" class="cta-btn animate__animated animate__fadeInUp animate__delay-2s" onclick="showPage('konsultasi-page')">Konsultasi Sekarang</a>
+                </div>
+                
+                <div class="hero-image" data-aos="fade-left">
+                    <img src="/api/placeholder/600/400" alt="Psikologi Komunikasi" />
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <h2 class="section-title" data-aos="fade-up">Apa yang Kami Tawarkan</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Temukan berbagai layanan dan fitur yang dapat membantu mengembangkan keterampilan komunikasi dan kesehatan mental Anda.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="feature-title">Pustaka Digital</h3>
+                        <p class="feature-desc">Akses ke berbagai buku, jurnal, dan materi pembelajaran tentang psikologi komunikasi.</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="feature-title">Kesehatan Mental</h3>
+                        <p class="feature-desc">Tips dan panduan untuk menjaga kesehatan mental melalui komunikasi yang sehat.</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="feature-title">Relasi & Pengembangan</h3>
+                        <p class="feature-desc">Kuiz dan tes untuk memahami gaya komunikasi dan meningkatkan hubungan interpersonal.</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="feature-title">Diskusi Interaktif</h3>
+                        <p class="feature-desc">Forum diskusi untuk berbagi pengalaman dan belajar dari komunitas.</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="feature-title">Konsultasi Profesional</h3>
+                        <p class="feature-desc">Sesi konsultasi dengan psikolog dan ahli komunikasi terpercaya.</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Webinar & Workshop</h3>
+                        <p class="feature-desc">Kegiatan rutin untuk meningkatkan keterampilan komunikasi dan kesadaran mental.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about">
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right">
+                        <img src="/api/placeholder/500/400" alt="Tentang Kami" />
+                    </div>
+                    
+                    <div class="about-text" data-aos="fade-left">
+                        <h2 class="about-title">Tentang Psikologi Bicara</h2>
+                        <p class="about-desc">Psikologi Bicara adalah platform edukasi yang berfokus pada psikologi komunikasi dan kesehatan mental. Kami hadir untuk membantu individu mengembangkan keterampilan bicara yang efektif, membangun hubungan yang sehat, dan meningkatkan kesejahteraan mental melalui komunikasi yang positif.</p>
+                        <p class="about-desc">Didukung oleh tim psikolog dan ahli komunikasi berpengalaman, kami menyediakan berbagai sumber daya dan layanan yang dapat diakses oleh siapa saja yang ingin meningkatkan kualitas komunikasi dalam kehidupan sehari-hari.</p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                                <div class="stat-number">10K+</div>
+                                <div class="stat-label">Pengguna Aktif</div>
+                            </div>
+                            
+                            <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Psikolog Profesional</div>
+                            </div>
+                            
+                            <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Artikel & Materi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter -->
+            <section class="newsletter">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Dapatkan Update Terbaru</h2>
+                    <p class="newsletter-desc">Berlangganan newsletter kami untuk mendapatkan informasi, tips, dan materi terbaru seputar psikologi komunikasi.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Alamat email Anda">
+                        <button type="submit" class="newsletter-btn">Berlangganan</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Pustaka Page -->
+        <div id="pustaka-page" class="page">
+            <h2 class="section-title" data-aos="fade-up">Pustaka Digital</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Temukan berbagai sumber bacaan dan materi pembelajaran untuk mengembangkan pemahaman tentang psikologi komunikasi.</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="/api/placeholder/400/250" alt="Buku Psikologi Komunikasi" class="resource-img">
+                    <div class="resource-content">
+                        <span class="resource-tag">Buku</span>
+                        <h3 class="resource-title">Psikologi Komunikasi: Teori dan Praktik</h3>
+                        <p class="resource-desc">Buku komprehensif yang membahas berbagai teori dan aplikasi praktis dalam psikologi komunikasi.</p>
+                        <a href="#" class="resource-link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="/api/placeholder/400/250" alt="Jurnal Komunikasi" class="resource-img">
+                    <div class="resource-content">
+                        <span class="resource-tag">Jurnal</span>
+                        <h3 class="resource-title">Komunikasi Efektif dalam Hubungan Interpersonal</h3>
+                        <p class="resource-desc">Jurnal penelitian tentang pentingnya komunikasi efektif dalam membangun dan mempertahankan hubungan.</p>
+                        <a href="#" class="resource-link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="/api/placeholder/400/250" alt="E-Book Komunikasi" class="resource-img">
+                    <div class="resource-content">
+                        <span class="resource-tag">E-Book</span>
+                        <h3 class="resource-title">Mengatasi Hambatan Komunikasi</h3>
+                        <p class="resource-desc">Panduan praktis untuk mengidentifikasi dan mengatasi berbagai hambatan dalam komunikasi.</p>
+                        <a href="#" class="resource-link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="/api/placeholder/400/250" alt="Artikel Psikologi" class="resource-img">
+                    <div class="resource-content">
+                        <span class="resource-tag">Artikel</span>
+                        <h3 class="resource-title">Bahasa Tubuh dan Komunikasi Non-Verbal</h3>
+                        <p class="resource-desc">Artikel mendalam tentang pentingnya bahasa tubuh dan sinyal non-verbal dalam komunikasi sehari-hari.</p>
+                        <a href="#" class="resource-link">Baca selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="600">
+                    <img src="/api/placeholder/400/250" alt="Video Tutorial" class="resource-img">
+                    <div class="resource-content">
+                        <span class="resource-tag">Video</span>
+                        <h3 class="resource-title">Seri Tutorial Komunikasi Asertif</h3>
+                        <p class="resource-desc">Kumpulan video tutorial yang mengajarkan teknik-teknik komunikasi asertif dalam berbagai situasi.</p>
+                        <a href="#" class="resource-link">Tonton sekarang <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="700">
+                    <img src="/api/placeholder/400/250" alt="Podcast Psikologi" class="resource-img">
+                    <div class="resource-content">
+                        <span class="resource-tag">Podcast</span>
+                        <h3 class="resource-title">Bicara Psikologi: Komunikasi & Kesehatan Mental</h3>
+                        <p class="resource-desc">Podcast mingguan yang membahas berbagai topik seputar komunikasi dan pengaruhnya terhadap kesehatan mental.</p>
+                        <a href="#" class="resource-link">Dengarkan sekarang <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kesehatan Mental Page -->
+        <div id="kesehatan-mental-page" class="page">
+            <h2 class="section-title" data-aos="fade-up">Kesehatan Mental</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Pelajari berbagai aspek kesehatan mental dan bagaimana komunikasi yang baik dapat mempengaruhi kesejahteraan psikologis Anda.</p>
+            
+            <div class="mental-health-grid">
+                <div class="mental-health-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="/api/placeholder/300/400" alt="Stres dan Komunikasi" class="mental-health-img">
+                    <div class="mental-health-content">
+                        <h3 class="mental-health-title">Mengelola Stres Melalui Komunikasi Efektif</h3>
+                        <p class="mental-health-desc">Stres dapat mempengaruhi cara kita berkomunikasi, dan sebaliknya, komunikasi yang buruk dapat meningkatkan stres. Pelajari bagaimana mengelola stres melalui komunikasi yang efektif.</p>
+                        <ul class="tips-list">
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Praktikkan komunikasi mindful untuk mengurangi reaksi emosional.</span>
+                            </li>
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Gunakan teknik "saya" bukan "kamu" untuk menghindari konflik.</span>
+                            </li>
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Belajar mendengarkan aktif untuk mengurangi kesalahpahaman.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mental-health-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="/api/placeholder/300/400" alt="Kecemasan Sosial" class="mental-health-img">
+                    <div class="mental-health-content">
+                        <h3 class="mental-health-title">Mengatasi Kecemasan Sosial</h3>
+                        <p class="mental-health-desc">Kecemasan sosial dapat menghambat kemampuan kita untuk berkomunikasi dengan orang lain. Temukan strategi untuk mengatasi kecemasan sosial dan membangun kepercayaan diri.</p>
+                        <ul class="tips-list">
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Mulai dari situasi sosial yang kecil dan tingkatkan secara bertahap.</span>
+                            </li>
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Persiapkan beberapa topik pembicaraan sebelum situasi sosial.</span>
+                            </li>
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Praktikkan teknik pernapasan untuk menenangkan diri.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mental-health-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="/api/placeholder/300/400" alt="Komunikasi dalam Hubungan" class="mental-health-img">
+                    <div class="mental-health-content">
+                        <h3 class="mental-health-title">Komunikasi Sehat dalam Hubungan</h3>
+                        <p class="mental-health-desc">Hubungan yang sehat dibangun atas dasar komunikasi yang baik. Pelajari bagaimana membangun komunikasi yang efektif dalam berbagai jenis hubungan.</p>
+                        <ul class="tips-list">
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Luangkan waktu untuk berbicara tanpa gangguan teknologi.</span>
+                            </li>
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Validasi perasaan dan perspektif pasangan Anda.</span>
+                            </li>
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Belajar menyelesaikan konflik secara konstruktif.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mental-health-card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="/api/placeholder/300/400" alt="Komunikasi Digital" class="mental-health-img">
+                    <div class="mental-health-content">
+                        <h3 class="mental-health-title">Dampak Komunikasi Digital pada Kesehatan Mental</h3>
+                        <p class="mental-health-desc">Era digital telah mengubah cara kita berkomunikasi. Temukan bagaimana komunikasi digital mempengaruhi kesehatan mental dan cara menjaga keseimbangan.</p>
+                        <ul class="tips-list">
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Tetapkan batasan untuk penggunaan media sosial.</span>
+                            </li>
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Prioritaskan komunikasi tatap muka untuk hubungan penting.</span>
+                            </li>
+                            <li class="tip-item">
+                                <i class="fas fa-check tip-icon"></i>
+                                <span class="tip-text">Waspadai dampak cyberbullying dan cara menghadapinya.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Relasi & Pengembangan Diri Page -->
+        <div id="relasi-page" class="page">
+            <h2 class="section-title" data-aos="fade-up">Relasi & Pengembangan Diri</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Temukan gaya komunikasi Anda dan pelajari cara mengembangkan keterampilan bicara untuk membangun hubungan yang lebih baik.</p>
+            
+            <div class="quiz-container" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="quiz-title">Kuiz: Apa Gaya Komunikasi Anda?</h3>
+                <p class="quiz-desc">Jawab beberapa pertanyaan berikut untuk mengetahui gaya komunikasi dominan Anda dan bagaimana hal ini mempengaruhi interaksi Anda dengan orang lain.</p>
+                
+                <div class="quiz-question">
+                    <p class="question-text">1. Ketika terlibat dalam percakapan kelompok, Anda biasanya:</p>
+                    <ul class="options-list">
+                        <li class="option-item">Berbicara banyak dan mengambil inisiatif</li>
+                        <li class="option-item">Mendengarkan dan berbicara hanya ketika diminta</li>
+                        <li class="option-item">Menunggu giliran dan berbicara secara terstruktur</li>
+                        <li class="option-item">Berbicara dengan antusias dan ekspresif</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question">
+                    <p class="question-text">2. Saat menghadapi konflik, Anda cenderung:</p>
+                    <ul class="options-list">
+                        <li class="option-item">Langsung menghadapinya dan mencari solusi</li>
+                        <li class="option-item">Menghindari konfrontasi dan mencari kompromi</li>
+                        <li class="option-item">Menganalisis situasi sebelum merespon</li>
+                        <li class="option-item">Mengekspresikan perasaan Anda dengan jelas</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question">
+                    <p class="question-text">3. Dalam pertemuan atau diskusi, Anda lebih suka:</p>
+                    <ul class="options-list">
+                        <li class="option-item">Langsung ke pokok permasalahan</li>
+                        <li class="option-item">Memastikan semua orang merasa nyaman dan didengar</li>
+                        <li class="option-item">Membahas detail dan fakta secara mendalam</li>
+                        <li class="option-item">Bertukar ide dan berpikir kreatif</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-buttons">
+                    <button class="quiz-btn prev">Sebelumnya</button>
+                    <button class="quiz-btn next">Selanjutnya</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diskusi Page -->
+        <div id="diskusi-page" class="page">
+            <h2 class="section-title" data-aos="fade-up">Mari Diskusi</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Bergabung dalam diskusi dan berbagi pengalaman dengan komunitas Psikologi Bicara.</p>
+            
+            <div class="discussion-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="comment-form">
+                    <h3>Tinggalkan Komentar</h3>
+                    <div class="form-group">
+                        <label class="form-label">Nama</label>
+                        <input type="text" class="form-input" placeholder="Nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-input" placeholder="Email Anda">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Komentar</label>
+                        <textarea class="form-textarea" placeholder="Tulis komentar Anda di sini..."></textarea>
+                    </div>
+                    <button class="form-button">Kirim Komentar</button>
+                </div>
+                
+                <div class="comments-section">
+                    <h3>Komentar Terbaru</h3>
+                    
+                    <div class="comments-list">
+                        <div class="comment-card" data-aos="fade-up">
+                            <div class="comment-avatar">R</div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <div class="comment-author">Rini Astuti</div>
+                                    <div class="comment-date">Mei 15, 2025</div>
+                                </div>
+                                <p class="comment-text">Saya baru mengikuti webinar tentang komunikasi asertif minggu lalu dan sangat terbantu! Sekarang saya lebih berani mengekspresikan pendapat tanpa merasa takut dinilai. Terima kasih Psikologi Bicara!</p>
+                                <div class="comment-actions">
+                                    <div class="comment-action"><i class="far fa-thumbs-up"></i> 12</div>
+                                    <div class="comment-action"><i class="far fa-comment"></i> Balas</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="comment-card" data-aos="fade-up">
+                            <div class="comment-avatar">B</div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <div class="comment-author">Budi Santoso</div>
+                                    <div class="comment-date">Mei 10, 2025</div>
+                                </div>
+                                <p class="comment-text">Artikel tentang komunikasi dalam hubungan sangat membantu saya memperbaiki komunikasi dengan pasangan. Kami sekarang lebih jarang bertengkar dan lebih bisa memahami satu sama lain. Saya sangat merekomendasikan untuk dibaca!</p>
+                                <div class="comment-actions">
+                                    <div class="comment-action"><i class="far fa-thumbs-up"></i> 8</div>
+                                    <div class="comment-action"><i class="far fa-comment"></i> Balas</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="comment-card" data-aos="fade-up">
+                            <div class="comment-avatar">L</div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <div class="comment-author">Lina Wijaya</div>
+                                    <div class="comment-date">Mei 5, 2025</div>
+                                </div>
+                                <p class="comment-text">Bagaimana cara mengatasi kecemasan saat berbicara di depan umum? Saya punya presentasi penting minggu depan dan sangat gugup. Ada tips dari para ahli atau pengalaman teman-teman yang bisa dibagikan?</p>
+                                <div class="comment-actions">
+                                    <div class="comment-action"><i class="far fa-thumbs-up"></i> 5</div>
+                                    <div class="comment-action"><i class="far fa-comment"></i> Balas</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-container" data-aos="fade-up">
+                    <div class="chat-header">
+                        <h3>Chat Langsung</h3>
+                        <p>Diskusi real-time dengan pengguna lain</p>
+                    </div>
+                    
+                    <div class="chat-messages">
+                        <div class="message message-incoming">
+                            <div class="message-bubble">Halo semua! Ada yang punya rekomendasi buku tentang komunikasi asertif?</div>
+                        </div>
+                        
+                        <div class="message message-outgoing">
+                            <div class="message-bubble">Hai! Saya sarankan "Berbicara dengan Tegas, Jelas, dan Positif" karya Dr. Santi Wijaya. Sangat praktis dan mudah dipahami.</div>
+                        </div>
+                        
+                        <div class="message message-incoming">
+                            <div class="message-bubble">Terima kasih rekomendasinya! Akan saya cari bukunya.</div>
+                        </div>
+                        
+                        <div class="message message-incoming">
+                            <div class="message-bubble">Saya juga mau rekomendasikan podcast "Bicara Psikologi", episode tentang komunikasi asertif sangat bagus!</div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input">
+                        <textarea class="chat-textarea" placeholder="Ketik pesan Anda..."></textarea>
+                        <button class="chat-send"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Konsultasi Page -->
+            <div id="konsultasi-page" class="page">
+        <h2 class="section-title" data-aos="fade-up">Konsultasi</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Dapatkan bantuan profesional dari psikolog dan ahli komunikasi terpercaya kami.</p>
+        
+        <div class="psychologists-grid">
+            <div class="psychologist-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="/api/placeholder/400/250" alt="Dr. Anita Wijaya" class="psychologist-img">
+                <div class="psychologist-content">
+                    <h3 class="psychologist-name">Dr. Anita Wijaya, M.Psi</h3>
+                    <p class="psychologist-spec">Psikolog Klinis</p>
+                    <p class="psychologist-desc">Spesialis dalam komunikasi interpersonal dan penanganan masalah relasi.</p>
+                    <div class="psychologist-info">
+                        <i class="fas fa-star"></i>
+                        <span>4.9/5 (120 ulasan)</span>
+                    </div>
+                    <div class="psychologist-info">
+                        <i class="fas fa-clock"></i>
+                        <span>10 tahun pengalaman</span>
+                    </div>
+                    <a href="#" class="book-btn">Jadwalkan Konsultasi</a>
+                </div>
+            </div>
+            
+            <div class="psychologist-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="/api/placeholder/400/250" alt="Dr. Budi Pratama" class="psychologist-img">
+                <div class="psychologist-content">
+                    <h3 class="psychologist-name">Dr. Budi Pratama, M.Psi</h3>
+                    <p class="psychologist-spec">Psikolog Komunikasi</p>
+                    <p class="psychologist-desc">Ahli dalam komunikasi publik dan mengatasi kecemasan sosial.</p>
+                    <div class="psychologist-info">
+                        <i class="fas fa-star"></i>
+                        <span>4.8/5 (95 ulasan)</span>
+                    </div>
+                    <div class="psychologist-info">
+                        <i class="fas fa-clock"></i>
+                        <span>8 tahun pengalaman</span>
+                    </div>
+                    <a href="#" class="book-btn">Jadwalkan Konsultasi</a>
+                </div>
+            </div>
+            
+            <div class="psychologist-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="/api/placeholder/400/250" alt="Dr. Siti Rahayu" class="psychologist-img">
+                <div class="psychologist-content">
+                    <h3 class="psychologist-name">Dr. Siti Rahayu, M.Psi</h3>
+                    <p class="psychologist-spec">Psikolog Keluarga</p>
+                    <p class="psychologist-desc">Fokus pada komunikasi dalam keluarga dan penyelesaian konflik.</p>
+                    <div class="psychologist-info">
+                        <i class="fas fa-star"></i>
+                        <span>4.7/5 (87 ulasan)</span>
+                    </div>
+                    <div class="psychologist-info">
+                        <i class="fas fa-clock"></i>
+                        <span>12 tahun pengalaman</span>
+                    </div>
+                    <a href="#" class="book-btn">Jadwalkan Konsultasi</a>
+                </div>
+            </div>
+            
+            <div class="psychologist-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="/api/placeholder/400/250" alt="Dr. Reza Mahendra" class="psychologist-img">
+                <div class="psychologist-content">
+                    <h3 class="psychologist-name">Dr. Reza Mahendra, M.Psi</h3>
+                    <p class="psychologist-spec">Psikolog Komunikasi Digital</p>
+                    <p class="psychologist-desc">Spesialis dampak komunikasi digital pada kesehatan mental dan relasi.</p>
+                    <div class="psychologist-info">
+                        <i class="fas fa-star"></i>
+                        <span>4.9/5 (105 ulasan)</span>
+                    </div>
+                    <div class="psychologist-info">
+                        <i class="fas fa-clock"></i>
+                        <span>7 tahun pengalaman</span>
+                    </div>
+                    <a href="#" class="book-btn">Jadwalkan Konsultasi</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="consultation-form" data-aos="fade-up">
+            <h3 class="form-title">Formulir Konsultasi</h3>
+            <p class="form-subtitle">Isi formulir di bawah ini untuk menjadwalkan sesi konsultasi dengan psikolog pilihan Anda.</p>
+            
+            <form class="appointment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Nama Lengkap <span class="required">*</span></label>
+                        <input type="text" class="form-input" placeholder="Nama lengkap Anda">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Email <span class="required">*</span></label>
+                        <input type="email" class="form-input" placeholder="Email aktif Anda">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Nomor Telepon <span class="required">*</span></label>
+                        <input type="tel" class="form-input" placeholder="Nomor telepon aktif">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Usia <span class="required">*</span></label>
+                        <input type="number" class="form-input" placeholder="Usia Anda">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Pilih Psikolog <span class="required">*</span></label>
+                        <select class="form-select">
+                            <option value="" selected disabled>-- Pilih Psikolog --</option>
+                            <option value="anita">Dr. Anita Wijaya, M.Psi</option>
+                            <option value="budi">Dr. Budi Pratama, M.Psi</option>
+                            <option value="siti">Dr. Siti Rahayu, M.Psi</option>
+                            <option value="reza">Dr. Reza Mahendra, M.Psi</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Jenis Konsultasi <span class="required">*</span></label>
+                        <select class="form-select">
+                            <option value="" selected disabled>-- Pilih Jenis Konsultasi --</option>
+                            <option value="personal">Konsultasi Personal</option>
+                            <option value="keluarga">Konsultasi Keluarga</option>
+                            <option value="pasangan">Konsultasi Pasangan</option>
+                            <option value="komunikasi">Komunikasi Efektif</option>
+                            <option value="kecemasan">Kecemasan Sosial</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Metode Konsultasi <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="metode" value="online">
+                                <span class="radio-text">Online (Video Call)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="metode" value="tatap-muka">
+                                <span class="radio-text">Tatap Muka</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="metode" value="chat">
+                                <span class="radio-text">Chat</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Tanggal Konsultasi <span class="required">*</span></label>
+                        <input type="date" class="form-input" min="2025-05-17">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Pilih Waktu <span class="required">*</span></label>
+                    <div class="time-slots">
+                        <div class="time-slot">
+                            <input type="radio" name="time" id="time-1" value="09:00">
+                            <label for="time-1" class="time-label">09:00</label>
+                        </div>
+                        <div class="time-slot">
+                            <input type="radio" name="time" id="time-2" value="10:00">
+                            <label for="time-2" class="time-label">10:00</label>
+                        </div>
+                        <div class="time-slot">
+                            <input type="radio" name="time" id="time-3" value="11:00">
+                            <label for="time-3" class="time-label">11:00</label>
+                        </div>
+                        <div class="time-slot">
+                            <input type="radio" name="time" id="time-4" value="13:00">
+                            <label for="time-4" class="time-label">13:00</label>
+                        </div>
+                        <div class="time-slot">
+                            <input type="radio" name="time" id="time-5" value="14:00">
+                            <label for="time-5" class="time-label">14:00</label>
+                        </div>
+                        <div class="time-slot">
+                            <input type="radio" name="time" id="time-6" value="15:00">
+                            <label for="time-6" class="time-label">15:00</label>
+                        </div>
+                        <div class="time-slot">
+                            <input type="radio" name="time" id="time-7" value="16:00">
+                            <label for="time-7" class="time-label">16:00</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Ceritakan Keluhan Anda <span class="required">*</span></label>
+                    <textarea class="form-textarea" placeholder="Deskripsikan masalah atau keluhan yang ingin Anda konsultasikan..."></textarea>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Kirim</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="faq-section" data-aos="fade-up">
+            <h3 class="faq-title">Pertanyaan Umum</h3>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Bagaimana cara menjadwalkan konsultasi?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Anda dapat menjadwalkan konsultasi dengan mengisi formulir di atas atau menghubungi kami melalui nomor telepon atau email yang tersedia. Tim kami akan segera menghubungi Anda untuk konfirmasi jadwal.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Berapa biaya untuk satu sesi konsultasi?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Biaya konsultasi bervariasi tergantung pada jenis konsultasi dan psikolog yang dipilih. Umumnya berkisar antara Rp300.000 - Rp750.000 per sesi. Informasi lebih detail akan diberikan setelah Anda mengisi formulir.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Apakah konsultasi dijamin kerahasiaannya?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Ya, kami menjamin kerahasiaan semua konsultasi. Semua psikolog kami terikat kode etik profesional yang menjamin kerahasiaan informasi klien.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Berapa lama durasi satu sesi konsultasi?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Durasi standar untuk satu sesi konsultasi adalah 60 menit. Namun, tergantung pada kebutuhan, dapat dijadwalkan sesi yang lebih panjang atau lebih pendek.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-brain logo-icon"></i>
+                <h2 class="logo-text">Psikologi<span>Bicara</span></h2>
+                <p class="footer-motto">Komunikasi Efektif untuk Kesehatan Mental</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3 class="footer-title">Navigasi</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#" onclick="showPage('home-page')">Home</a></li>
+                        <li><a href="#" onclick="showPage('pustaka-page')">Pustaka</a></li>
+                        <li><a href="#" onclick="showPage('kesehatan-mental-page')">Kesehatan Mental</a></li>
+                        <li><a href="#" onclick="showPage('relasi-page')">Relasi & Pengembangan Diri</a></li>
+                        <li><a href="#" onclick="showPage('diskusi-page')">Mari Diskusi</a></li>
+                        <li><a href="#" onclick="showPage('konsultasi-page')">Konsultasi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Hubungi Kami</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i>Jl. Menteng Raya No. 15, Jakarta Pusat</li>
+                        <li><i class="fas fa-phone"></i>+62 21 5566 7788</li>
+                        <li><i class="fas fa-envelope"></i>info@psikologibicara.id</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Ikuti Kami</h3>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Psikologi Bicara. All Rights Reserved.</p>
+            <ul class="footer-policy">
+                <li><a href="#">Syarat & Ketentuan</a></li>
+                <li><a href="#">Kebijakan Privasi</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
